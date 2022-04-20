@@ -1,0 +1,45 @@
+
+body{
+	width: 70%;
+	margin: 30px;
+}
+header,section{
+	margin: 15px;
+}
+
+/*header section*/
+.name h1{
+	line-height: 1.2;
+	margin-bottom: -10px;
+}
+.name h5{
+	font-style: italic;
+	margin-top: 10px;
+}
+.name {
+    position: relative;
+    }
+.name img {
+    position: absolute;
+    top: -12px;
+    right: 150px;
+    width: 130px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/*Table data*/
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  border: 1px solid red;
+  padding: 10px;
+  /*height: 50px;
+  width: 50px;*/
+}
+
+table td.border {
+  border: 1px double black;
+}
