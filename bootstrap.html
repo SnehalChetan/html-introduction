@@ -11,9 +11,46 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container-fluid bg-secondary">
-      
-<div class="row card-deck ">
+    <style type="text/css">
+  .page-content {
+  /*width: calc(100% -30rem);*/
+  margin-left: 10rem;
+  transition: all 0.4s;
+}
+</style><!-- bg-secondary -->
+    <div class="container-fluid bg-info">
+      <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">Collapsed content</h4>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+      <div class="vertical-nav w-20 position-fixed bg-info"><!-- vertical navbar -->
+        <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0 bg-white"><u>Main</u></p>
+          <ul class="nav flex-column mb-0">
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Gallery</a></li>
+          </ul>
+        <p class="font-weight-bold text-uppercase px-3 small py-4 mb-0 bg-white"><u>Charts</u></p>
+          <ul class="nav flex-column mb-0">
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Area charts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Bar charts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Pie charts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Line charts</a></li>
+          </ul>
+      </div><!-- end of vertical navbar -->
+    <div class="page-content ml-8">
+     
+      <div class="row card-deck ">
         <div class="col p-1">
             <div class="card service-cont pb-4 bg-light shadow-lg align-items-center">
               <div class="img-fluid">
@@ -21,7 +58,7 @@
             </div>
               <h3 class="text-center pt-3 pb-2">Web Development</h3>
               <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium quo quasi. Sit, saepe impedit!</p>
-              <button type="button" class="btn btn-outline-primary">LEARN MORE</button>
+              <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="LEARN MORE">LEARN MORE </button>
             </div>
         </div>
         <div class="col p-1">
@@ -31,7 +68,7 @@
             </div>
             <h3 class="text-center pt-3 pb-2">UI/UX Design</h3>
             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium quo quasi. Sit, saepe impedit!</p>
-            <button type="button" class="btn btn-outline-primary">LEARN MORE</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="LEARN MORE">LEARN MORE </button>
           </div>
         </div>
         <div class="col p-1">
@@ -41,7 +78,7 @@
             </div>
             <h3 class="text-center pt-3 pb-2">Mobile Apps</h3>
             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium quo quasi. Sit, saepe impedit!</p>
-            <button type="button" class="btn btn-outline-primary">LEARN MORE</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="LEARN MORE">LEARN MORE </button>
           </div>
         </div>
         <div class="col p-1">
@@ -51,7 +88,7 @@
             </div>
             <h3 class="text-center pt-3 pb-2">Data Analysis</h3>
             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium quo quasi. Sit, saepe impedit!</p>
-            <button type="button" class="btn btn-outline-primary">LEARN MORE</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="LEARN MORE">LEARN MORE </button>
           </div>
         </div>
       </div><!-- row 1 ends-->
@@ -63,7 +100,7 @@
             </div>
               <h3 class="text-center pt-3 pb-2">E-commerce tool</h3>
               <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium quo quasi. Sit, saepe impedit!</p>
-              <button type="button" class="btn btn-outline-primary">LEARN MORE</button>
+              <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="LEARN MORE">LEARN MORE </button>
             </div>
         </div>
         <div class="col p-1">
@@ -73,7 +110,7 @@
             </div>
             <h3 class="text-center pt-3 pb-2">SEO</h3>
             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium quo quasi. Sit, saepe impedit!</p>
-            <button type="button" class="btn btn-outline-primary">LEARN MORE</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="LEARN MORE">LEARN MORE </button>
           </div>
         </div>
         <div class="col p-1">
@@ -83,7 +120,7 @@
             </div>
             <h3 class="text-center pt-3 pb-2">Database Analysis</h3>
             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium quo quasi. Sit, saepe impedit!</p>
-            <button type="button" class="btn btn-outline-primary">LEARN MORE</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="LEARN MORE">LEARN MORE </button>
           </div>
         </div>
         <div class="col p-1">
@@ -93,7 +130,8 @@
             </div>
             <h3 class="text-center pt-3 pb-2">Marketing</h3>
             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium quo quasi. Sit, saepe impedit!</p>
-            <button type="button" class="btn btn-outline-primary">LEARN MORE</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom" title="LEARN MORE">LEARN MORE </button>
+
           </div>
         </div> 
 
@@ -101,8 +139,8 @@
 
       </div> <!-- row 2 ends -->
 
+    </div><!-- end page content -->
 
-
-    </div>
+    </div><!-- end of container -->
   </body>
 </html>
