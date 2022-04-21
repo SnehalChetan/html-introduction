@@ -7,3 +7,5 @@ Below are a couple of exercises to get you started, of course a true developer n
 So grab all the info you can and let's get started with HTML & CSS!
 
 Start with exercise 1
+
+
