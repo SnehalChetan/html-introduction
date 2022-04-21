@@ -1,17 +1,24 @@
 
 body{
-	width: 70%;
+	/*width: 80%;*/
 	margin: 30px;
+  background-color: antiquewhite;
 }
+
 header,section{
 	margin: 15px;
 }
-
+header{
+  min-height: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /*border: 1px solid green;*/
+}
 /*header section*/
 h3{
   text-decoration: underline;
 }
-.name h1{
+.name h2{
 	line-height: 1.2;
 	margin-bottom: -10px;
 }
@@ -22,22 +29,106 @@ h3{
 .name {
     position: relative;
     }
-.name img {
+ .imagedata img {
     position: absolute;
-    top: -12px;
-    right: 250px;
-    width: 130px;
-    height: 150px;
+    top: 25px;
+    right: 250px;/**/
+    width: 200px;
+    height: 300px;
+    float: right;
+    /*border-radius: 50%;*/
+}/**/
+.hello{
+    position: relative;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: -ms-fit-content;
+    width: -o-fit-content;
+    width: fit-content;
+    z-index: 1;
+}
+.hello::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: translate(-50%,-50%);
+    width: 45px;
+    height: 45px;
+    background-color: red;
     border-radius: 50%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/*typing effect*/
+.container{
+  display: inline-block;
+}
+.container span{
+  display: inline-block;
+}
+.typed-out{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  font-size: 1em;
+  width: 0;
+  animation: 
+  typing 1s steps(20, end) forwards,
+  blink .8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+
+/*about me section title*/
+.aboutme{
+  width: 100%;
+  
+}
+.aboutmesection, .hobbiessection {
+    position: relative;
+}
+.aboutmesection p{
+font-size: 32px;
+    padding: 40px;
+    color: crimson;
+  }
+  .hobbiessection p{
+    font-size: 32px;
+    padding: 40px;
+    color: crimson;
+  }
+.aboutmebg, .hobbiesbg {
+    
+    position: absolute;
+    z-index: -1;
+    color: #dbd4d4;
+    font-size: 6em;
 }
 
 /*Table data*/
+.objective{
+
+}
 table {
   border-collapse: collapse;
+  /*float: right;*/
 }
 
 table td {
-  border: 1px solid black;
+ /* border: 1px solid black;*/
   padding: 10px;
   /*height: 50px;
   width: 50px;*/
@@ -46,3 +137,9 @@ table td {
 table td.border {
   border: 1px double black;
 }
+/*.tableData{
+  float: right;
+}*/
+/*.hobbies{
+  float: right;
+}*/
