@@ -13,42 +13,102 @@
   <body>
     <style type="text/css">
   .page-content {
-  /*width: calc(100% -30rem);*/
+  /*width: calc(100% -30rem);
   margin-left: 10rem;
-  transition: all 0.4s;
+  transition: all 0.4s;*/
 }
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+
+ }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+ }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+ }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+ }
+navbar-toggler
+
+
 </style><!-- bg-secondary -->
-    <div class="container-fluid bg-info">
-      <div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h4 class="text-white">Collapsed content</h4>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-  </div>
+    <div class="container-fluid bg-info ">
+<!-- -->
+<div class="pos-f-t float-left w-20">
   <nav class="navbar navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </nav>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-2">
+      <ul class="nav flex-column mb-0">
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Gallery</a></li>
+          </ul>
+    </div>
+  </div>
+  
 </div>
-      <div class="vertical-nav w-20 position-fixed bg-info"><!-- vertical navbar -->
-        <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0 bg-white"><u>Main</u></p>
+
+<!-- start accordion  z-index-2 position-fixed--
+
+<div class="accordion  float-left w-25 " id="accordionExample">
+  <div class="card ">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Main
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body bg-info">
           <ul class="nav flex-column mb-0">
             <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white font-italic">About</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Services</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Gallery</a></li>
           </ul>
-        <p class="font-weight-bold text-uppercase px-3 small py-4 mb-0 bg-white"><u>Charts</u></p>
-          <ul class="nav flex-column mb-0">
-            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Area charts</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Bar charts</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Pie charts</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Line charts</a></li>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Menu
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body bg-info">
+        <ul class="nav flex-column mb-0">
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white font-italic">Gallery</a></li>
           </ul>
-      </div><!-- end of vertical navbar -->
-    <div class="page-content ml-8">
+      </div>
+    </div>
+  </div>
+  
+</div>
+<!-- end accordion z-index-1-->
+
+
+    <div class="page-content" style="z-index:-1">
      
       <div class="row card-deck ">
         <div class="col p-1">
@@ -142,5 +202,22 @@
     </div><!-- end page content -->
 
     </div><!-- end of container -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.collapse').collapse();
+});
+
+</script>
   </body>
 </html>
